@@ -1,0 +1,30 @@
+name: 🐛 Reporte de Bug
+description: Reporta un error o problema
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar un bug! 
+  
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del bug
+      description: ¿Qué está pasando?
+      placeholder: "Cuando intento..."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: componente
+    attributes:
+      label: ¿Dónde ocurre?
+      options:
+        - Dashboard
+        - Categorización
+        - Scraping de emails
+        - Otro
+    validations:
+      required: true
